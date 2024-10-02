@@ -1,0 +1,12 @@
+.instagram_news{
+    display: flex;
+    justify-content: space-around;
+}
+
+.rsme-embed{
+    /* height: 80vh; */
+}
+
+.HoverCard, .Feedback, .SocialProof, .Footer{
+    display: none;
+}

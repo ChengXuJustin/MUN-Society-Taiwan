@@ -1,0 +1,65 @@
+/* default */
+.topic{
+    font-size: 36px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(161, 161, 161);
+    margin: 0px 80px 20px;
+    padding-bottom: 12px;
+}
+
+.topic_light{
+    font-size: 36px;
+    font-weight: 600;
+    color: aliceblue;
+    margin: 0px 80px 20px;
+    padding-bottom: 12px;
+}
+
+.sub_topic_light{
+    font-size: 26px;
+    font-weight: 300;
+    color: aliceblue;
+    margin: 0px 80px 20px;
+}
+
+.content_h1{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.content_light{
+    font-size: 16px;
+    color: aliceblue;
+    margin: 0px 80px 20px;
+}
+
+.content_P{
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.darkBg{
+    color: #ffffff;
+}
+
+.textLight{
+    color: #ffff;
+}
+/* IntroList */
+
+.intro{
+    background-color: #fff;
+    margin-bottom: 120px;
+}
+
+.intro p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.paragraph{
+    margin-bottom: 10px;
+}
+

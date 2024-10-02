@@ -1,0 +1,65 @@
+/* ========== Header ========== */
+.index_header{
+    display: none;
+}
+
+header{
+    width: 100%;
+    display: flex;  
+    align-items: center;
+    padding-right: 20px;
+    background-color: #00466C;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo_container{
+    width: 20%;
+}
+
+.logo{
+   width: 100%;
+   height: auto;
+   padding: 0;
+}
+
+header nav{
+    width: 70%;
+}
+
+header nav ul{
+    padding-right: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li{
+    margin-right: 20px;
+}
+
+header nav ul li .navLink{
+    padding: 10px 30px;
+    color: #ffffff;
+    transform: uppercase;
+    border-radius: 5px;
+}
+
+header nav ul li .navLink:hover{
+    background-color: #035988;
+    transition: 0.4s;
+}
+
+.social_media{
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: #a0a07d; */
+}
+
+.media_icon{
+    margin-right: 20px;
+    font-size: 20px;
+}
