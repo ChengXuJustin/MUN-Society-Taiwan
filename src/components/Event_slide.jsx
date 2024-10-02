@@ -1,4 +1,5 @@
-import React from 'react'
+// import React from 'react'
+import PropTypes from 'prop-types'
 import '../css/event_slide.css'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css';
@@ -16,7 +17,7 @@ const Event_slide = ({ listings }) => {
 
     return (
         <div className="Event_slide PageXContainer">
-            <Slider >
+            <Slider {...settings}>
                 {listings.map((item, index) => (
                     <div className="item" key={index}>
                         <div className="pic">
@@ -32,6 +33,17 @@ const Event_slide = ({ listings }) => {
             </Slider>
         </div>
     )
+}
+
+Event_slide.propTypes = {
+    listings: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+            time: PropTypes.string.isRequired,
+            event: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+        })
+    ).isRequired,
 }
 
 export default Event_slide

@@ -1,4 +1,5 @@
-import React from 'react'
+// import React from 'react'
+import PropTypes from 'prop-types'
 
 const Bring_people = ({ listings }) => {
     return(
@@ -12,6 +13,17 @@ const Bring_people = ({ listings }) => {
             ))}
         </div>
     )
+}
+
+Bring_people.propTypes = {
+    listings: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+            topic: PropTypes.string.isRequired,
+            sub_topic: PropTypes.string.isRequired,
+            content: PropTypes.string.isRequired,
+        })
+    ).isRequired,
 }
 
 export default Bring_people

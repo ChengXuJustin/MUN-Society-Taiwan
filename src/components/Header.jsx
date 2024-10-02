@@ -1,6 +1,6 @@
-import React from 'react'
+// import React from 'react'
 import mstIcon from '../data/src.json';
-import MediaIcon from '../data/icon.json';
+// import MediaIcon from '../data/icon.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareInstagram, faSquareFacebook, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 import '../css/header.css'

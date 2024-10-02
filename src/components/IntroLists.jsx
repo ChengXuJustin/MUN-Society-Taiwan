@@ -1,10 +1,7 @@
-import React from 'react'
+// import React from 'react'
 import '../css/content.css'
 import '../css/index.css'
-
-// type Props = {
-//   listing: any[];
-// }
+import PropTypes from 'prop-types'
 
 const IntroLists = ({listings1}) => {
 
@@ -17,7 +14,6 @@ const IntroLists = ({listings1}) => {
     })
 
     return (
-
       <div key={item.id} className="intro">
         <h1 className="topic">{item.topic}</h1>
         {renderParagraph}
@@ -27,11 +23,20 @@ const IntroLists = ({listings1}) => {
 
 
   return (
-    <>
       {renderItems}
-    </>
-    
   )
+
+}
+
+
+IntroLists.propTypes = {
+  listings: PropTypes.arrayOf(
+      PropTypes.shape({
+          id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+          topic: PropTypes.string.isRequired,
+          content: PropTypes.string.isRequired,
+      })
+  ).isRequired,
 }
 
 export default IntroLists

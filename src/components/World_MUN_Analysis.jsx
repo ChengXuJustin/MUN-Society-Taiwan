@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import '../css/wmunAnalysis.css'
 
 const World_MUN_Analysis = () => {

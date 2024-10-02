@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import RenderContent from '../components/RenderContent'
 import Event_Content from '../data/events_brief.json'
 import Event_Items from '../data/event_items.json'

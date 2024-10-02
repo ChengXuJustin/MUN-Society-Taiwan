@@ -1,4 +1,5 @@
-import React from 'react'
+// import React from 'react'
+import PropTypes from 'prop-types'
 import '../css/feature.css'
 
 const Feature = ( {listings} ) => {
@@ -13,9 +14,16 @@ const Feature = ( {listings} ) => {
         ))}
 
     </div>
-    
-    
   )
+}
+
+Feature.propTypes = {
+  listings: PropTypes.arrayOf(
+      PropTypes.shape({
+          id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+          title: PropTypes.string.isRequired,
+      })
+  ).isRequired,
 }
 
 export default Feature

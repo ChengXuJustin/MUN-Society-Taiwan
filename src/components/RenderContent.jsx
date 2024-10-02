@@ -1,4 +1,5 @@
-import React from 'react'
+// import React from 'react'
+import PropTypes from 'prop-types'
 
 const RenderContent = ({ listings }) => {
     return (
@@ -19,5 +20,15 @@ const RenderContent = ({ listings }) => {
         </div>
     );
 };
+
+RenderContent.propTypes = {
+    listings: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+            topic: PropTypes.string.isRequired,
+            content: PropTypes.string.isRequired,
+        })
+    ).isRequired,
+}
 
 export default RenderContent

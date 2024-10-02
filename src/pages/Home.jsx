@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Bring_people from '../components/Bring_people'
 import BringPeople from '../data/bring_people.json'
 import Logo_animation from '../components/Logo_animation'

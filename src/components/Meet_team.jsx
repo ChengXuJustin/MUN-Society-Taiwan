@@ -1,10 +1,11 @@
-import React from 'react'
+// import React from 'react'
 import '../css/colors.css'
 import '../css/meet_team.css'
+import PropTypes from 'prop-types'
 
 const Meet_team = ({listings}) => {
     
-    const renderItems = listings.map((item) => {
+    const renderItems = listings.map((item, index) => {
         
         const renderContent = item.content.map((paragraph, index) => {
             return (
@@ -13,7 +14,7 @@ const Meet_team = ({listings}) => {
         })
 
         return (
-            <div className="MeetTeam PageXContainer">
+            <div className="MeetTeam PageXContainer" key={index}>
                 <div className="pic">
                     <img className="avatar" src={item.avatar} alt="" />
                 </div>
@@ -37,6 +38,17 @@ const Meet_team = ({listings}) => {
             {renderItems}
         </div>
     )
+}
+
+Meet_team.propTypes = {
+    listings: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+            topic: PropTypes.string.isRequired,
+            sub_topic: PropTypes.string.isRequired,
+            content: PropTypes.string.isRequired,
+        })
+    ).isRequired,
 }
 
 export default Meet_team
