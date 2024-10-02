@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/MUN\Society\Taiwan/",
+  base: "/MUN-Society-Taiwan/",
 })
