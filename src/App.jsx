@@ -13,15 +13,15 @@ function App() {
 
   const getBGcolor = () => {
     switch (location.pathname) {
-      case '/':
+      case '/MUN-Society-Taiwan':
         return "var(--dark-blue-bg)"
       case '/home':
         return "var(--dark-blue-bg)"
-      case '/about':
+      case '/MUN-Society-Taiwan/about':
         return "#ffffff"
-      case '/events':
+      case '/MUN-Society-Taiwan/events':
         return "var(--dark-blue-bg)"
-      case '/contact':
+      case '/MUN-Society-Taiwan/contact':
         return "var(--dark-blue-bg)"
       default: return "transparent"
     }
