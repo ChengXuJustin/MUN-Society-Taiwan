@@ -15,8 +15,6 @@ function App() {
     switch (location.pathname) {
       case '/MUN-Society-Taiwan':
         return "var(--dark-blue-bg)"
-      case '/home':
-        return "var(--dark-blue-bg)"
       case '/MUN-Society-Taiwan/about':
         return "#ffffff"
       case '/MUN-Society-Taiwan/events':
@@ -41,9 +39,9 @@ function App() {
 
       <Routes>
         {/* <Route path="/home" element={<Home />}/> */}
-        <Route path="/MUN-Society-Taiwan/about" element={<About />}/>
-        <Route path="/MUN-Society-Taiwan/events" element={<Events />}/>
-        <Route path="/MUN-Society-Taiwan/contact" element={<Contact />}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/events" element={<Events />}/>
+        <Route path="/contact" element={<Contact />}/>
       </Routes>
       
       <Header /> 

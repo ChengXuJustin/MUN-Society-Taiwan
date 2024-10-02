@@ -14,9 +14,9 @@ const Footer = () => {
             </div>
             <div className="contact_text">
                 <ul className="footer_nav">
-                    <a href=""><Link to="/MUN-Society-Taiwan/about"><li>About Us</li></Link></a>
-                    <a href=""><Link to="/MUN-Society-Taiwan/events"><li>Events</li></Link></a>
-                    <a href=""><Link to="/MUN-Society-Taiwan/contact"><li>Contact</li></Link></a>
+                    <Link to="/MUN-Society-Taiwan/about"><li>About Us</li></Link>
+                    <Link to="/MUN-Society-Taiwan/events"><li>Events</li></Link>
+                    <Link to="/MUN-Society-Taiwan/contact"><li>Contact</li></Link>
                 </ul>
                 <ul className="footer_nav">
                     <a href=""><li>Phone:  +886 972-859-487</li></a>
