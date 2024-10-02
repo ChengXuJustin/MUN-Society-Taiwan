@@ -13,7 +13,7 @@ const Logo_animation = () => {
             <div className="hidenBox"></div>
           </div>
           <div>
-            <Link to="/about" className="Explore">
+            <Link to="/MUN-Society-Taiwan/about" className="Explore">
               <li className='innerTxt'>Explore MST</li>
             </Link>
           </div>

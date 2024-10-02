@@ -8,15 +8,15 @@ const Footer = () => {
     <footer className="container">
         <div className="footer_top">
             <div className="footer_pic">
-                <Link to="/">
+                <Link to="/MUN-Society-Taiwan">
                     <img src={mstIcon.logo_icon_footer} alt="" />
                 </Link>
             </div>
             <div className="contact_text">
                 <ul className="footer_nav">
-                    <a href=""><Link to="/about"><li>About Us</li></Link></a>
-                    <a href=""><Link to="/events"><li>Events</li></Link></a>
-                    <a href=""><Link to="/contact"><li>Contact</li></Link></a>
+                    <a href=""><Link to="/MUN-Society-Taiwan/about"><li>About Us</li></Link></a>
+                    <a href=""><Link to="/MUN-Society-Taiwan/events"><li>Events</li></Link></a>
+                    <a href=""><Link to="/MUN-Society-Taiwan/contact"><li>Contact</li></Link></a>
                 </ul>
                 <ul className="footer_nav">
                     <a href=""><li>Phone:  +886 972-859-487</li></a>

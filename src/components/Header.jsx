@@ -1,6 +1,6 @@
 // import React from 'react'
-import mstIcon from '../data/src.json';
 // import MediaIcon from '../data/icon.json';
+import mstIcon from '../data/src.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareInstagram, faSquareFacebook, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 import '../css/header.css'
@@ -22,20 +22,20 @@ const Header = () => {
     <>
       <header style={{opacity: getOpacity_status()}}>
         <div className="logo_container">
-          <Link to="/">
+          <Link to="/MUN-Society-Taiwan">
             <img className="logo" src={mstIcon.logo_icon} alt="MST Logo" />
           </Link>
         </div>
         <nav>
           <ul>
             <li>
-              <NavLink className="navLink" to="/about">About</NavLink>
+              <NavLink className="navLink" to="/MUN-Society-Taiwan/about">About</NavLink>
             </li>
             <li>
-              <NavLink className="navLink" to="/events">Events</NavLink>
+              <NavLink className="navLink" to="/MUN-Society-Taiwan/events">Events</NavLink>
             </li>
             <li>
-              <NavLink className="navLink" to="/contact">Contact</NavLink>
+              <NavLink className="navLink" to="/MUN-Society-Taiwan/contact">Contact</NavLink>
             </li>
           </ul>
         </nav>

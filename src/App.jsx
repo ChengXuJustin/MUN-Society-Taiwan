@@ -35,15 +35,15 @@ function App() {
       
       <div id='toIndex'></div>
     
-      {location.pathname === "/" && (
+      {location.pathname === "/chengxujustin.github.io/MUN-Society-Taiwan" && (
         <Home />
       )}
 
       <Routes>
         {/* <Route path="/home" element={<Home />}/> */}
-        <Route path="/about" element={<About />}/>
-        <Route path="/events" element={<Events />}/>
-        <Route path="/contact" element={<Contact />}/>
+        <Route path="/MUN-Society-Taiwan/about" element={<About />}/>
+        <Route path="/MUN-Society-Taiwan/events" element={<Events />}/>
+        <Route path="/MUN-Society-Taiwan/contact" element={<Contact />}/>
       </Routes>
       
       <Header /> 
