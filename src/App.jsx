@@ -35,7 +35,7 @@ function App() {
       
       <div id='toIndex'></div>
     
-      {location.pathname === "/chengxujustin.github.io/MUN-Society-Taiwan" && (
+      {location.pathname === "/MUN-Society-Taiwan" && (
         <Home />
       )}
 
