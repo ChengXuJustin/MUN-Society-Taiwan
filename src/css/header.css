@@ -63,3 +63,64 @@ header nav ul li .navLink:hover{
     margin-right: 20px;
     font-size: 20px;
 }
+
+@media (max-width:430px){
+    header{
+        height: 50px;
+        justify-content: space-between;
+        padding: 0px;
+        background-color: #bdbdbd;
+        position: fixed;
+        bottom: 0px;
+        left: 0;
+        z-index: 10;
+        vertical-align: bottom;
+    }
+    
+    .logo_container{
+        display: none;
+    }
+
+    header nav{
+        width: 100%;
+        height: 100%;
+    }
+    
+    header nav ul{
+        /* width: 100%; */
+        height: 100%;
+        padding: 0px;
+        justify-content: space-between;
+    }
+    
+    header nav ul li{
+        width: 33.33%;
+        height: 50px;
+        margin: 0px;
+        padding:0;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    header nav ul li .navLink{
+        padding: 30px 30px;
+        color: #000000;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+    
+    header nav ul li .navLink:hover{
+        background-color: #035988;
+        transition: 0.4s;
+    }
+    
+    .social_media{
+        display: none;
+    }
+    
+    .media_icon{
+        margin-right: 20px;
+        font-size: 20px;
+    }
+}

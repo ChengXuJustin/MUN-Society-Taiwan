@@ -30,7 +30,7 @@ function App() {
   return (
     
 
-    <div style={{paddingTop:150, backgroundColor: getBGcolor()}}>
+    <div style={{paddingTop:150, backgroundColor: getBGcolor(), position:"relative"}}>
       
       <div id='toIndex'></div>
     
