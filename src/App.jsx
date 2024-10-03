@@ -1,9 +1,10 @@
-import { Route, Router, Routes, useLocation } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
 import './css/index.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import { About, Events, Contact, Home } from './pages'
+// import About from './pages'
 
 
 function App() {
@@ -37,12 +38,12 @@ function App() {
         <Home />
       )}
 
-      <Route>
+      <Routes>
         {/* <Route path="/home" element={<Home />}/> */}
-        <Routes path="/about" element={<About />}/>
-        <Routes path="/events" element={<Events />}/>
-        <Routes path="/contact" element={<Contact />}/>
-      </Route>
+        <Route path="/about" element={<About />}/>
+        <Route path="/events" element={<Events />}/>
+        <Route path="/contact" element={<Contact />}/>
+      </Routes>
       
       <Header /> 
       <Footer />

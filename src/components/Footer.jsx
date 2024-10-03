@@ -1,6 +1,6 @@
 // import React from 'react'
 import mstIcon from '../data/src.json'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import '../css/footer.css'
 
 const Footer = () => {
@@ -14,9 +14,9 @@ const Footer = () => {
             </div>
             <div className="contact_text">
                 <ul className="footer_nav">
-                    <Link to="/MUN-Society-Taiwan/about"><li>About Us</li></Link>
-                    <Link to="/MUN-Society-Taiwan/events"><li>Events</li></Link>
-                    <Link to="/MUN-Society-Taiwan/contact"><li>Contact</li></Link>
+                    <li><NavLink to="/MUN-Society-Taiwan/about" style={{color:"#ffffff"}}>About Us</NavLink></li>
+                    <li><NavLink to="/MUN-Society-Taiwan/events" style={{color:"#ffffff"}}>Events</NavLink></li>
+                    <li><NavLink to="/MUN-Society-Taiwan/contact" style={{color:"#ffffff"}}>Contact</NavLink></li>
                 </ul>
                 <ul className="footer_nav">
                     <a href=""><li>Phone:  +886 972-859-487</li></a>

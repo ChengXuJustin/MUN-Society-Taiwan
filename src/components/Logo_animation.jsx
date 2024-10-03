@@ -13,9 +13,9 @@ const Logo_animation = () => {
             <div className="hidenBox"></div>
           </div>
           <div>
-            <NavLink to="/MUN-Society-Taiwan/about" className="Explore">
+            <Link to="/MUN-Society-Taiwan/about" className="Explore">
               <li className='innerTxt'>Explore MST</li>
-            </NavLink>
+            </Link>
           </div>
     </div>
   )

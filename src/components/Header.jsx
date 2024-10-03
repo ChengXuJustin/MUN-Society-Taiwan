@@ -11,7 +11,7 @@ const Header = () => {
 
   const getOpacity_status = () => {
     switch (location.pathname) {
-      case 'MUN-Society-Taiwan' :
+      case '/MUN-Society-Taiwan' :
         return "0"
       default: return "1"
     }
@@ -29,13 +29,13 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <NavLink className="navLink" to="/MUN-Society-Taiwan/about">About</NavLink>
+              <Link className="navLink" to="/MUN-Society-Taiwan/about">About</Link>
             </li>
             <li>
-              <NavLink className="navLink" to="/MUN-Society-Taiwan/events">Events</NavLink>
+              <Link className="navLink" to="/MUN-Society-Taiwan/events">Events</Link>
             </li>
             <li>
-              <NavLink className="navLink" to="/MUN-Society-Taiwan/contact">Contact</NavLink>
+              <Link className="navLink" to="/MUN-Society-Taiwan/contact">Contact</Link>
             </li>
           </ul>
         </nav>
