@@ -44,9 +44,11 @@ Meet_team.propTypes = {
     listings: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-            topic: PropTypes.string.isRequired,
-            sub_topic: PropTypes.string.isRequired,
-            content: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired,
+            name: PropTypes.string.isRequired,
+            university: PropTypes.string.isRequired,
+            avatar: PropTypes.string.isRequired,
+            content: PropTypes.array.isRequired,
         })
     ).isRequired,
 }

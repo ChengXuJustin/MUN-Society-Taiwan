@@ -1,6 +1,6 @@
 // import React from 'react'
 import mstIcon from '../data/src.json';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../css/explore_btn.css'
 
 const Logo_animation = () => {
@@ -13,7 +13,7 @@ const Logo_animation = () => {
             <div className="hidenBox"></div>
           </div>
           <div>
-            <Link to="/MUN-Society-Taiwan/about" className="Explore">
+            <Link to="MUN-Society-Taiwan/about" className="Explore">
               <li className='innerTxt'>Explore MST</li>
             </Link>
           </div>

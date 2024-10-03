@@ -22,20 +22,20 @@ const Header = () => {
     <>
       <header style={{opacity: getOpacity_status()}}>
         <div className="logo_container">
-          <Link to="/MUN-Society-Taiwan">
+          <Link to="MUN-Society-Taiwan">
             <img className="logo" src={mstIcon.logo_icon} alt="MST Logo" />
           </Link>
         </div>
         <nav>
           <ul>
             <li>
-              <Link className="navLink" to="/MUN-Society-Taiwan/about">About</Link>
+              <Link className="navLink" to="MUN-Society-Taiwan/about">About</Link>
             </li>
             <li>
-              <Link className="navLink" to="/MUN-Society-Taiwan/events">Events</Link>
+              <Link className="navLink" to="MUN-Society-Taiwan/events">Events</Link>
             </li>
             <li>
-              <Link className="navLink" to="/MUN-Society-Taiwan/contact">Contact</Link>
+              <Link className="navLink" to="MUN-Society-Taiwan/contact">Contact</Link>
             </li>
           </ul>
         </nav>

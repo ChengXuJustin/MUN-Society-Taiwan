@@ -3,9 +3,9 @@ import '../css/content.css'
 import '../css/index.css'
 import PropTypes from 'prop-types'
 
-const IntroLists = ({listings1}) => {
+const IntroLists = ( {listings} ) => {
 
-  const renderItems = listings1.map((item) => {
+  const renderItems = listings.map((item) => {
   
     const renderParagraph = item.content.map((paragraph, index) => {
       return( 
@@ -23,7 +23,9 @@ const IntroLists = ({listings1}) => {
 
 
   return (
+    <>
       {renderItems}
+    </>
   )
 
 }
@@ -33,8 +35,10 @@ IntroLists.propTypes = {
   listings: PropTypes.arrayOf(
       PropTypes.shape({
           id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+          // id: PropTypes.number.isRequired,
           topic: PropTypes.string.isRequired,
-          content: PropTypes.string.isRequired,
+          content: PropTypes.array.isRequired,
+          // content: PropTypes.object.isRequired
       })
   ).isRequired,
 }

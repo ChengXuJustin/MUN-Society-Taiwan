@@ -7,7 +7,7 @@ function About() {
 
   return (
     <div className='aboutPage'>
-      <IntroLists listings1={mainIntroData}/>
+      <IntroLists listings={mainIntroData}/>
       <Meet_team listings={meet_the_team}/>
     </div>
   )
