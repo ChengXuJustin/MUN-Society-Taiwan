@@ -7,7 +7,7 @@ const Logo_animation = () => {
   return (
     <div style={{marginTop:"-150px"}}>
           <div className="Logo_Container">
-            <video className="Logo_video" src="public\MST_Logo_animation.mp4" autoPlay muted playsInline>
+            <video className="Logo_video" src="./public/MST_Logo_animation.mp4" autoPlay muted playsInline>
               {/* <source src={mstIcon.logo_gif} type='video/mp4' /> */}
               {/* <source src="public\MST_Logo_animation.mp4" type='video/mp4' /> */}
             </video>
