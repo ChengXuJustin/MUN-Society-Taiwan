@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { Route, Router, Routes, useLocation } from 'react-router-dom'
 import './App.css'
 import './css/index.css'
 import Footer from './components/Footer'
@@ -37,12 +37,12 @@ function App() {
         <Home />
       )}
 
-      <Routes>
+      <Route>
         {/* <Route path="/home" element={<Home />}/> */}
-        <Route path="/about" element={<About />}/>
-        <Route path="/events" element={<Events />}/>
-        <Route path="/contact" element={<Contact />}/>
-      </Routes>
+        <Routes path="/about" element={<About />}/>
+        <Routes path="/events" element={<Events />}/>
+        <Routes path="/contact" element={<Contact />}/>
+      </Route>
       
       <Header /> 
       <Footer />
