@@ -14,7 +14,7 @@ function App() {
 
   const getBGcolor = () => {
     switch (location.pathname) {
-      case '/MUN-Society-Taiwan':
+      case '/MUN-Society-Taiwan/':
         return "var(--dark-blue-bg)"
       case '/MUN-Society-Taiwan/about':
         return "#ffffff"
@@ -34,7 +34,7 @@ function App() {
       
       <div id='toIndex'></div>
     
-      {location.pathname === "/MUN-Society-Taiwan" && (
+      {location.pathname === "/MUN-Society-Taiwan/" && (
         <Home />
       )}
 

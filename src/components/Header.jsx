@@ -11,7 +11,7 @@ const Header = () => {
 
   const getOpacity_status = () => {
     switch (location.pathname) {
-      case '/MUN-Society-Taiwan' :
+      case '/MUN-Society-Taiwan/' :
         return "0"
       default: return "1"
     }
@@ -22,7 +22,7 @@ const Header = () => {
     <>
       <header style={{opacity: getOpacity_status()}}>
         <div className="logo_container">
-          <Link to="MUN-Society-Taiwan">
+          <Link to="MUN-Society-Taiwan/">
             <img className="logo" src={mstIcon.logo_icon} alt="MST Logo" />
           </Link>
         </div>
