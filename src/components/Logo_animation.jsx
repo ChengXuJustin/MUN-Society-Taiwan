@@ -8,7 +8,7 @@ const Logo_animation = () => {
     <div style={{marginTop:"-150px"}}>
           <div className="Logo_Container">
             <video className="Logo_video" autoPlay muted playsInline>
-              <source src='https://live.staticflickr.com/video/54017435822/af31cec194/1080p.mp4?s=eyJpIjo1NDAxNzQzNTgyMiwiZSI6MTcyNzE4ODA2OSwicyI6ImZmZGZjNTRhY2I3YWExM2MxZjU0MWI1NTAxYzQ0ZmY5YmU2MGZiMzMiLCJ2IjoxfQ' type='video/mp4' />
+              <source src='https://live.staticflickr.com/video/54017435822/af31cec194/1080p.mp4?s=eyJpIjo1NDAxNzQzNTgyMiwiZSI6MTcyNzE4ODA2OSwicyI6ImZmZGZjNTRhY2I3YWExM2MxZjU0MWI1NTAxYzQ0ZmY5YmU2MGZiMzMiLCJ2IjoxfQ'  />
             </video>
             <div className="hidenBox"></div>
           </div>
