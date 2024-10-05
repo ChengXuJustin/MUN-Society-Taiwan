@@ -1,6 +1,8 @@
 import { Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
 import './css/index.css'
+import './css/home.css'
+import './css/content.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import { About, Events, Contact, Home } from './pages'

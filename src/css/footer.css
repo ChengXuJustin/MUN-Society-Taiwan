@@ -1,30 +1,4 @@
 /* ========== Footer ========== */
-
-
-.footer_pic{
-    width: 30%;
-}
-
-.footer_pic img{
-    width: 100%;
-}
-
-.contact_text{
-    padding-top: 30px;
-    display: flex;
-}
-
-.contact_text .footer_nav{
-    margin-right: 100px;
-}
-
-.contact_text .footer_nav li{
-    margin-bottom: 12px;
-    color: #ffffff;
-}
-
-
-
 footer{
     background-color: var(--dark-blue-bg);
     padding: 10px 80px;
@@ -40,6 +14,7 @@ footer{
 
 footer .bottomContext{
     display: flex;
+    align-items: center;
 }
 
 footer .bottomContext .copyright{
@@ -51,11 +26,14 @@ footer .bottomContext .copyright{
 footer .bottomContext ul{
     display: flex;
     margin-right: 30px;
+    line-height: 1.5;
 }
 
 footer .bottomContext ul li{
     padding: 0 10px;
     border-right: 2px solid rgb(210, 210, 210);
+    justify-content: center;
+    align-items: center;
 }
 
 footer .bottomContext ul li .navLink{
@@ -76,9 +54,6 @@ footer .bottomContext .social_media a{
 
 
 @media (max-width: 768px){
-    footer{
-    }
-
     footer .bottomContext{
         flex-direction: column;
     }
