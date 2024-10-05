@@ -28,7 +28,7 @@ function App() {
 
   return (
     
-    <div style={{height:"100vh", paddingTop:150, backgroundColor: getBGcolor(), position:"relative"}}>
+    <div style={{paddingTop:150, backgroundColor: getBGcolor(), position:"relative"}}>
         
       {location.pathname === "/MUN-Society-Taiwan/" && (
         <Home />

@@ -113,8 +113,7 @@ header nav ul li:has( > a.active) {
     .phoneHeader{
         width: 100%;
         display: flex;
-        justify-content:space-between;  
-        align-items: center;
+        justify-content: space-between;  
         padding: 0px;
         background-color: #e3e3e3;
         margin: 0;
@@ -139,6 +138,14 @@ header nav ul li:has( > a.active) {
     
     .phoneHeader nav ul li{
         margin: 0px;
+        width: 33.33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phoneHeader nav ul li:hover{
+        background-color: transparent;
     }
 
     .phoneHeader nav ul li .navLink{
