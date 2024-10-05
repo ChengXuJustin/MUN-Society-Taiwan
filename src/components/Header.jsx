@@ -76,6 +76,10 @@ const Header = () => {
       </header>
 
     {/*  Cellphone version header */}
+      <div className="HeaderLogo">
+        <img src={mstIcon.logo_icon} alt="" />
+      </div>
+
       <header className="phoneHeader" style={{opacity: getOpacity_status()}}>
 
         <nav>

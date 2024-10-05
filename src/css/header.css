@@ -20,6 +20,10 @@
       display: none;  
 }
 
+.HeaderLogo{
+    display: none;
+}
+
 .logo_container{
     width: 20%;
 }
@@ -110,6 +114,17 @@ header nav ul li:has( > a.active) {
     }
 
     /* ========== Cellphone Version Header ========== */
+    .HeaderLogo{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .HeaderLogo img{
+        width: 100%;
+    }
+
     .phoneHeader{
         width: 100%;
         display: flex;
