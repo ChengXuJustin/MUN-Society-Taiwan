@@ -33,3 +33,12 @@ a{
     padding: 0px 80px;
 }
 
+@media (max-width:430px) {
+    .container{
+        margin-top:100px;
+    }
+    
+    .PageXContainer{
+        padding: 0px 20px;
+    } 
+}

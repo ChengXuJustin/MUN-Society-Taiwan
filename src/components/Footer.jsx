@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="container">
         <div className="footer_top">
             <div className="footer_pic">
-                <Link to="/MUN-Society-Taiwan">
+                <Link to="/MUN-Society-Taiwan/">
                     <img src={mstIcon.logo_icon_footer} alt="" />
                 </Link>
             </div>

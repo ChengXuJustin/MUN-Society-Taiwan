@@ -4,7 +4,7 @@ import mstIcon from '../data/src.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareInstagram, faSquareFacebook, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
 import '../css/header.css'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 const Header = () => {
@@ -19,26 +19,34 @@ const Header = () => {
 
 
   return (
+
     <>
-      <header style={{opacity: getOpacity_status()}}>
+    {/*  Desktop version header */}
+      <header className="desktopHeader" style={{opacity: getOpacity_status()}}>
+
+        {/* Logo Container */}
         <div className="logo_container">
           <Link to="MUN-Society-Taiwan/">
             <img className="logo" src={mstIcon.logo_icon} alt="MST Logo" />
           </Link>
         </div>
+
+        {/* Header Navigation */}
         <nav>
           <ul>
             <li>
-              <Link className="navLink" to="MUN-Society-Taiwan/about">About</Link>
+              <NavLink className="navLink" to="MUN-Society-Taiwan/about">About</NavLink>
             </li>
             <li>
-              <Link className="navLink" to="MUN-Society-Taiwan/events">Events</Link>
+              <NavLink className="navLink" to="MUN-Society-Taiwan/events">Events</NavLink>
             </li>
             <li>
-              <Link className="navLink" to="MUN-Society-Taiwan/contact">Contact</Link>
+              <NavLink className="navLink" to="MUN-Society-Taiwan/contact">Contact</NavLink>
             </li>
           </ul>
         </nav>
+
+        {/* Social Media Link Icon */}
         <ul className="social_media">
           <a href="https://www.instagram.com/munsoc.tw?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target='_blank'>
             <FontAwesomeIcon 
@@ -66,7 +74,29 @@ const Header = () => {
           </a>
         </ul>
       </header>
+
+    {/*  Cellphone version header */}
+      <header className="phoneHeader" style={{opacity: getOpacity_status()}}>
+
+        <nav>
+          <ul>
+            <li>
+              <NavLink className="navLink" to="MUN-Society-Taiwan/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink className="navLink" to="MUN-Society-Taiwan/events">Events</NavLink>
+            </li>
+            <li>
+              <NavLink className="navLink" to="MUN-Society-Taiwan/contact">Contact</NavLink>
+            </li>
+          </ul>
+        </nav>
+
+      </header>
+
     </>
+
+    
   )
 }
 

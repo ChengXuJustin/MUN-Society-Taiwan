@@ -4,7 +4,6 @@ import './css/index.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import { About, Events, Contact, Home } from './pages'
-// import About from './pages'
 
 
 function App() {
@@ -29,11 +28,8 @@ function App() {
 
   return (
     
-
-    <div style={{paddingTop:150, backgroundColor: getBGcolor(), position:"relative"}}>
-      
-      <div id='toIndex'></div>
-    
+    <div style={{height:"100vh", paddingTop:150, backgroundColor: getBGcolor(), position:"relative"}}>
+        
       {location.pathname === "/MUN-Society-Taiwan/" && (
         <Home />
       )}
@@ -44,6 +40,8 @@ function App() {
         <Route path="MUN-Society-Taiwan/events" element={<Events />}/>
         <Route path="MUN-Society-Taiwan/contact" element={<Contact />}/>
       </Routes>
+
+      <div id='toIndex'></div>
       
       <Header /> 
       <Footer />
