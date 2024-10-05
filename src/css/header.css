@@ -87,14 +87,14 @@ header nav ul li:has( > a.active) {
     border-bottom: 1px solid rgb(215, 161, 0);
 }
 
-.social_media{
+header .social_media{
     width: 10%;
     display: flex;
     justify-content: flex-end;
     /* background-color: #a0a07d; */
 }
 
-.media_icon{
+header .social_media .media_icon{
     margin-right: 20px;
     font-size: 20px;
 }
