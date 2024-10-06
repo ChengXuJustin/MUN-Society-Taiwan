@@ -10,6 +10,7 @@ footer{
     z-index: 10;
     border-top: 1px solid #0f5b84;
     box-shadow: -1px 0px 30px #0c3850;
+    padding-bottom: 80px;
 }
 
 footer .contact_text{
@@ -155,7 +156,7 @@ footer .bottomContext .social_media a{
 
 @media (max-width: 430px){
     footer{
-        padding: 10px 20px;
+        padding: 10px 20px 50px;
     }
 
     footer .bottomContext{
