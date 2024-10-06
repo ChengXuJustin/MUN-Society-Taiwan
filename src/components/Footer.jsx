@@ -4,6 +4,8 @@ import { Link, NavLink } from 'react-router-dom'
 import '../css/footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareBehance, faSquareFacebook, faSquareInstagram } from '@fortawesome/free-brands-svg-icons'
+import { HashLink } from 'react-router-hash-link';
+
 
 const Footer = () => {
   return (
@@ -23,11 +25,26 @@ const Footer = () => {
 
             <div className="contact_text">
                 <ul className="footer_nav">
-                    <li><NavLink to="/MUN-Society-Taiwan/about" style={{color:"#ffffff"}}>About Us</NavLink></li>
-                    <li><NavLink to="/MUN-Society-Taiwan/events" style={{color:"#ffffff"}}>Events</NavLink></li>
-                    <li><NavLink to="/MUN-Society-Taiwan/contact" style={{color:"#ffffff"}}>Contact</NavLink></li>
+                    <div className='item'>
+                        <li><NavLink to="/MUN-Society-Taiwan/about" style={{color:"#ffffff"}}>About Us</NavLink></li>
+                        <li><NavLink to="/MUN-Society-Taiwan/about#WhatIsMUN" style={{color:"#ffffff"}}>What is MUN</NavLink></li>
+                        {/* <li><HashLink smooth to="/MUN-Society-Taiwan/about#WhatIsMUN" style={{color:"#ffffff"}}>What is MUN</HashLink></li> */}
+                        <li><NavLink to="/MUN-Society-Taiwan/about#WhatWeDo" style={{color:"#ffffff"}}>What We Do</NavLink></li>
+                        <li><NavLink to="/MUN-Society-Taiwan/about" style={{color:"#ffffff"}}>Our Mission</NavLink></li>
+                        <li><NavLink to="/MUN-Society-Taiwan/about" style={{color:"#ffffff"}}>Meet the Team</NavLink></li>
+                    </div>
+                    <div className="item">
+                        <li><NavLink to="/MUN-Society-Taiwan/events" style={{color:"#ffffff"}}>Events</NavLink></li>
+                        <li><NavLink to="/MUN-Society-Taiwan/events" style={{color:"#ffffff"}}>Our Organizing Experiences</NavLink></li>
+                        <li><NavLink to="/MUN-Society-Taiwan/events" style={{color:"#ffffff"}}>Harvard World MUN 2023 Paris</NavLink></li>
+                        <li><NavLink to="/MUN-Society-Taiwan/events" style={{color:"#ffffff"}}>Spring Mock Conference</NavLink></li>
+                        <li><NavLink to="/MUN-Society-Taiwan/events" style={{color:"#ffffff"}}>Re_MUN UN Conference</NavLink></li>
+                    </div>
+                    <div className="item">
+                        <li><NavLink to="/MUN-Society-Taiwan/contact" style={{color:"#ffffff"}}>Contact</NavLink></li>
+                    </div>
                 </ul>
-                <ul className="footer_nav">
+                <ul className="detail">
                     <a href=""><li>Phone:  +886 972-859-487</li></a>
                     <a href=""><li>Email:  taipei@worldmun.org</li></a>
                 </ul>

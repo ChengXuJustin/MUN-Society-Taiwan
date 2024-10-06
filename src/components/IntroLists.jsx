@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 
 const IntroLists = ( {listings} ) => {
 
-  const renderItems = listings.map((item) => {
+  const renderItems = listings.map((item, index) => {
   
     const renderParagraph = item.content.map((paragraph, index) => {
       return( 
@@ -15,7 +15,7 @@ const IntroLists = ( {listings} ) => {
     })
 
     return (
-      <div key={item.id} className="intro">
+      <div key={index} className="intro" id={item.id}>
         <h1 className="topic">{item.topic}</h1>
         {renderParagraph}
       </div>

@@ -1,6 +1,7 @@
 .instagram_news{
     width: 100%;
     overflow-x: scroll;
+    padding-bottom: 50px;
 }
 
 .overflowFrame{
