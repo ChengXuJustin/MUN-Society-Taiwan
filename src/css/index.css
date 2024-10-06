@@ -39,7 +39,11 @@ a{
 
 @media (max-width:1024px) {
     .componentContainer{
-        padding: 20px 80px;
+        padding: 20px 40px;
+    }
+
+    .PageXContainer{
+        padding: 0px 40px;
     }
 }
 
