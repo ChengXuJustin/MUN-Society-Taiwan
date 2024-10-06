@@ -41,3 +41,29 @@
 }
 
 .data .item .data_name{}
+
+
+@media (max-width:1024px) {
+    .HWMUN{
+        background-image: url(https://live.staticflickr.com/65535/54029659268_b009b49b95_k.jpg);
+        height: 100vh;
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+     
+    .HWMUN_topic{
+         font-size: 56px;
+         font-weight: 600;
+    }
+     
+    .HWMUN_description{
+         text-align:center;
+         font-size: 20px;
+         margin-bottom: 50px;
+    }
+}

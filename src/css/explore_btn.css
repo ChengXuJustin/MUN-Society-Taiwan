@@ -79,6 +79,43 @@
     background-color: #0686cb;
 }
 
+@media (max-width:1024px) {
+    .Explore{
+        /* display: block; */
+        left:75%;
+    }
+}
+
+@media (max-width:786px) {
+    .Explore{
+        left:70%;
+    }
+    
+    .Explore .innerTxt{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:430px) {
+    .Logo_Animation{
+        /* display: flex;
+        justify-content: center; */
+    }
+    .Explore{
+        width: 60%;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .Explore .innerTxt{
+        padding: 14px 30px;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+
 @keyframes spin{
     0%{
         --angle: 0deg;
