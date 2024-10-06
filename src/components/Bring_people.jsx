@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Bring_people = ({ listings }) => {
     return(
-        <div className="container">
+        <div className="container PageXContainer">
             {listings.map((item, index) => (
                 <div key={index}>
                     <h1 className="topic_light">{item.topic}</h1>

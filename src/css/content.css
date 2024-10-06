@@ -11,7 +11,6 @@
     font-size: 36px;
     font-weight: 600;
     color: aliceblue;
-    margin: 0px 80px 20px;
     padding-bottom: 12px;
 }
 
@@ -19,7 +18,7 @@
     font-size: 26px;
     font-weight: 300;
     color: aliceblue;
-    margin: 0px 80px 20px;
+    margin-bottom: 16px;
 }
 
 .content_h1{
@@ -30,7 +29,8 @@
 .content_light{
     font-size: 16px;
     color: aliceblue;
-    margin: 0px 80px 20px;
+    margin-bottom: 30px;
+    line-height: 1.5;
 }
 
 .content_P{
@@ -46,45 +46,85 @@
 .textLight{
     color: #ffff;
 }
-/* IntroList */
 
-.intro{
-    background-color: #fff;
-    margin-bottom: 120px;
-}
-
-.intro p{
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 1em;
-}
-
-.paragraph{
-    margin-bottom: 10px;
-}
 
 @media (max-width:1024px) {
-        
-}
-
-@media ( max-width:786px ){
-    .topic_light{
-        font-size: 20px;
+    .topic{
+        font-size: 36px;
+        font-weight: 600;
+        border-bottom: 1px solid rgb(161, 161, 161);
+        margin: 0px 80px 20px;
         padding-bottom: 12px;
     }
-
+    
+    .topic_light{
+        font-size: 36px;
+        font-weight: 600;
+        color: aliceblue;
+        padding-bottom: 12px;
+    }
+    
     .sub_topic_light{
+        font-size: 26px;
+        font-weight: 300;
+        color: aliceblue;
+        margin-bottom: 16px;
+    }
+    
+    .content_h1{
         font-size: 20px;
-        margin: 0px 80px 20px;
+        font-weight: 900;
     }
     
     .content_light{
-        font-size: 12px;
-        /* margin: 0; */
+        font-size: 16px;
+        color: aliceblue;
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+
+}
+
+@media ( max-width:786px ){
+    .topic{
+        font-size: 30px;
     }
     
-    .content_P{
+    .topic_light{
+        font-size: 30px;
+    }
+    
+    .sub_topic_light{
+        font-size: 22px;
+    }
+    
+    .content_h1{
         font-size: 16px;
-        margin-bottom: 20px;
+    }
+    
+    .content_light{
+        font-size: 14px;
+    }
+}
+
+@media ( max-width:430px ){
+    .topic{
+        font-size: 22px;
+    }
+    
+    .topic_light{
+        font-size: 22px;
+    }
+    
+    .sub_topic_light{
+        font-size: 20px;
+    }
+    
+    .content_h1{
+        font-size: 16px;
+    }
+    
+    .content_light{
+        font-size: 14px;
     }
 }

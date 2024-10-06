@@ -1,6 +1,7 @@
 // import React from 'react'
 import '../css/content.css'
 import '../css/index.css'
+import '../css/intro.css'
 import PropTypes from 'prop-types'
 
 const IntroLists = ( {listings} ) => {
