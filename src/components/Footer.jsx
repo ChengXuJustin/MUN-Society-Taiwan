@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
 
             <div className="bottomContext">
-                <p className='copyright'>Copyright &copy;2024 MUN Society Taiwan All rights reserved</p>
+                <p className='copyright'>Copyright &copy; 2024 MUN Society Taiwan All rights reserved</p>
                 <ul className='info'>
                     <li><NavLink className="navLink" to="/">Terms of Use</NavLink></li>
                     <li><NavLink className="navLink" to="/">Privacy</NavLink></li>
